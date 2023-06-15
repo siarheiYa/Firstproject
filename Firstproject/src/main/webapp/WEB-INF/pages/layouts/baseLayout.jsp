@@ -16,7 +16,7 @@
 <body>
        	<div class="page">
 		<div class="header">
-			<c:import url="/WEB-INF/pages/tiles/header.jsp" />
+			<c:import url="/WEB-INF/pages/titles/header.jsp" />
 		</div>
 
 		<div class="base-layout-wrapper">
@@ -28,17 +28,17 @@
 					
 				</c:if>
 				<c:if test="${sessionScope.user eq 'active'}">
-					<c:import url="/WEB-INF/pages/tiles/menu.jsp" />
+					<c:import url="/WEB-INF/pages/titles/menu.jsp" />
 				</c:if>
 		</div>
 
 		<div class="content">
 
 				<c:if test="${not (sessionScope.user eq 'active')}">
-					<c:import url="/WEB-INF/pages/tiles/guestInfo.jsp" />
+					<c:import url="/WEB-INF/pages/titles/guestInfo.jsp" />
 				</c:if>
 				<c:if test="${sessionScope.user eq 'active'}">
-					<c:import url="/WEB-INF/pages/tiles/body.jsp" />
+					<c:import url="/WEB-INF/pages/titles/body.jsp" />
 				</c:if>
 
 
@@ -47,7 +47,7 @@
 
 		<div class="footer">
 
-			<c:import url="/WEB-INF/pages/tiles/footer.jsp" />
+			<c:import url="/WEB-INF/pages/titles/footer.jsp" />
 		</div>
 	</div>
 
